@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Buttom from "../Buttom";
 import "../TransactionsList/styles.css"
 
@@ -43,7 +42,7 @@ const TransactionList = ({ ListTransactions,setListTransactions,filtro,setFiltro
                 <h2>Resumo Financeiro</h2>
                 <div className="list--btn--filter">
                     <Buttom classe="btn--filter btn--filter--todos" onClick={()=>setFiltro("todos")}>Todos</Buttom>
-                    <Buttom classe="btn--filter btn--filter--entradas"onClick={()=>setFiltro("entrada")}>Entradas</Buttom>
+                    <Buttom classe="btn--filter btn--filter--entradas"onClick={()=>setFiltro("Entrada")}>Entradas</Buttom>
                     <Buttom classe="btn--filter btn--filter--despesas"onClick={()=>setFiltro("Saida")}>Despesas</Buttom>
                 </div>
             </nav>

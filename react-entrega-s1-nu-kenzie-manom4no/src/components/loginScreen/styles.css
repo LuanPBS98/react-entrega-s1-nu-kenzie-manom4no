@@ -55,7 +55,7 @@
     background-color: #E34981;
 } 
 
-@media (min-width:768px){
+@media (min-width:1000px){
     .loginScreen--main{
         justify-content: center;
         align-items: center;

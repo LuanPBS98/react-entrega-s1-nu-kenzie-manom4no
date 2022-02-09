@@ -5,7 +5,7 @@ import "../transactionForm/styles.css"
 
 const TransactionForm = ({ ListTransactions,setListTransactions }) => {
     const [ id,setId ] = useState(1)
-    const [ formInput,setFormInput ] = useState({descricao:"",valor:0,tipo_de_transação:"entrada"});
+    const [ formInput,setFormInput ] = useState({descricao:"",valor:0,tipo_de_transação:"Entrada"});
     
     const addTransaction = () => {
         setId(id+1);
@@ -33,7 +33,7 @@ const TransactionForm = ({ ListTransactions,setListTransactions }) => {
                 className="transaction--select" 
                 value={ formInput.tipo_de_transação } 
                 onChange={((evt) => setFormInput ({...formInput,tipo_de_transação:evt.target.value}))}>
-                    <option>Entrada</option>
+                    <option >Entrada</option>
                     <option>Saida</option>
                 </select>
             </div>
