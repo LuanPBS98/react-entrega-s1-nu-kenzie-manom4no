@@ -1,0 +1,22 @@
+.transaction--header{
+    position: fixed;
+}
+.transaction--main{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+.trasactiionLList{
+    margin-left: 20px;
+}
+@media(min-width:768px){
+    .transaction--main{
+        overflow-y: hidden;
+    }
+}
